@@ -9,6 +9,7 @@ import { FirstComponent } from "./first/first.component";
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  // event binding
   change(){
 
     this.count+=1
