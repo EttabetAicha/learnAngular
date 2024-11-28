@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FirstComponent } from "./first/first.component";
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
-  imports: [FirstComponent],
+  imports: [FirstComponent,FormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -20,6 +21,7 @@ export class AppComponent {
     }
   }
   title = 'firstProject';
+  text=""
 //  var declarations
   count=0
   name="aichaettabet"

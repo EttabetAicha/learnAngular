@@ -1,10 +1,13 @@
 <p>hi my name is aicha ettabet </p>
 <!-- call component inside a component -->
 <app-first></app-first>
-<!-- string interpolition -->
+<!-- string interpolition using {{}}-->
 <p>{{name}}</p>
+<!-- property binding -->
 <img [src]="img" alt="">
 {{count}}
 <!-- make event -->
 <button (click)="change()" > +  </button>
 <button (click)="descount()" > -  </button>
+<p>{{text}}</p>
+<input type="text" [(ngModel)]="text">
