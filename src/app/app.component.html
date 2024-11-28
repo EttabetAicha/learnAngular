@@ -6,8 +6,10 @@
 <!-- property binding -->
 <img [src]="img" alt="">
 {{count}}
-<!-- make event -->
+<!-- make event binding-->
 <button (click)="change()" > +  </button>
 <button (click)="descount()" > -  </button>
 <p>{{text}}</p>
+
+<!-- two way data binding -->
 <input type="text" [(ngModel)]="text">
