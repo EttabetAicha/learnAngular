@@ -10,6 +10,12 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  user={
+    firstName: 'aicha ettabet',
+    age:23,
+    email: 'aicha@gmail.com'
+
+  }
   // event binding
   change(){
 
