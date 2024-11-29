@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FirstComponent } from "./first/first.component";
 import { FormsModule } from '@angular/forms';
-
+import { NgModule } from '@angular/core';
 @Component({
   selector: 'app-root',
   imports: [FirstComponent,FormsModule],
@@ -15,7 +15,18 @@ export class AppComponent {
     age:23,
     email: 'aicha@gmail.com'
 
+
   }
+//  declare array of name
+  persones=[
+    "salma",
+    "ahmed",
+    "aicha",
+    "mohamed",
+    "nour"
+  ]
+  // declare var with the type
+   color:string='red'
   // event binding
   change(){
 

@@ -21,5 +21,28 @@
   @if (user.age >=20) {<p>{{ user.age }}</p>}
   <p>{{user.email}}</p>
 
+  <!-- loop -->
+    <ul>
+    @for (item of persones; track $index) {
+      <li>{{item}}</li>
+    }
+    </ul>
+    <!-- switch case -->
+     @switch (color) {
+      @case ('red') {
+        <p>im red</p>
+      }
+      @case ('blue') {
+        <p>im blue</p>
+      }
+      @default {
+        <p>im not red or blue</p>
+      }
+     }
+     
+
+
+
+
 
 </div>
