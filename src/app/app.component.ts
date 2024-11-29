@@ -2,7 +2,12 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FirstComponent } from "./first/first.component";
 import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
+
 import { NgModule } from '@angular/core';
+
+import { CommonModule } from '@angular/common';
+
 @Component({
   selector: 'app-root',
   imports: [FirstComponent,FormsModule],
@@ -26,7 +31,7 @@ export class AppComponent {
     "nour"
   ]
   // declare var with the type
-   color:string='red'
+   color:string='blue'
   // event binding
   change(){
 
