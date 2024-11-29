@@ -14,8 +14,10 @@
 <!-- two way data binding -->
 <input type="text" [(ngModel)]="text">
 <div>
-
+<!-- acces to data from object -->
   <h1>{{user.firstName}}</h1>
-  <p>{{user.age}}</p>
+  <!-- if condition inside html -->
+  @if (user.age >=20) {<p>{{ user.age }}</p>}
   <p>{{user.email}}</p>
+
 </div>
